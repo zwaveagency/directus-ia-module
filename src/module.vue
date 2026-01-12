@@ -1,26 +1,23 @@
 <template>
-  <private-view title="IA">
+  <private-view title="Base di conoscenza">
     <template #navigation>
       <v-list nav>
-        <v-list-item 
-          :to="`/content/Base_di_conoscenza`"
-        >
-          <v-list-item-icon><v-icon name="auto_stories" /></v-list-item-icon>
-          <v-list-item-content>Base di conoscenza</v-list-item-content>
+        <v-list-item :to="`/content/FAQ`">
+          <v-list-item-icon><v-icon name="help_outline" /></v-list-item-icon>
+          <v-list-item-content>FAQ</v-list-item-content>
         </v-list-item>
         
-        <v-list-item 
-          :to="`/content/Prompt`"
-        >
-          <v-list-item-icon><v-icon name="code" /></v-list-item-icon>
-          <v-list-item-content>Prompt</v-list-item-content>
+        <v-list-item :to="`/content/Sito_web`">
+          <v-list-item-icon><v-icon name="language" /></v-list-item-icon>
+          <v-list-item-content>Sito web</v-list-item-content>
+        </v-list-item>
+        
+        <v-list-item :to="`/content/File`">
+          <v-list-item-icon><v-icon name="folder" /></v-list-item-icon>
+          <v-list-item-content>File</v-list-item-content>
         </v-list-item>
       </v-list>
     </template>
-
-    <div class="empty">
-      <p>Seleziona una sezione dal menu laterale</p>
-    </div>
   </private-view>
 </template>
 
@@ -29,13 +26,3 @@ export default {
   name: 'IAModule'
 };
 </script>
-
-<style scoped>
-.empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: var(--foreground-subdued);
-}
-</style>
