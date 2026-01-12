@@ -7,7 +7,19 @@ export default {
   routes: [
     {
       path: '',
-      component: ModuleComponent,
+      redirect: '/content/FAQ'
     },
+    {
+      path: 'faq',
+      redirect: '/content/FAQ'
+    },
+    {
+      path: 'sito-web',
+      redirect: '/content/Sito_web'
+    },
+    {
+      path: 'file',
+      redirect: '/content/File'
+    }
   ],
 };
