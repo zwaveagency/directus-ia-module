@@ -1,5 +1,5 @@
 {
-  "name": "directus-ia-module",
+  "name": "@zwaveagency/directus-ia-module",
   "version": "1.0.0",
   "description": "Modulo IA per Directus",
   "type": "module",
